@@ -24,10 +24,10 @@ export function LeadForm({
   defaultProgram,
   onDone,
 }: {
-  className?: string;
-  compact?: boolean;
-  defaultProgram?: string;
-  onDone?: () => void;
+  className?: string | undefined;
+  compact?: boolean | undefined;
+  defaultProgram?: string | undefined;
+  onDone?: (() => void) | undefined;
 }) {
   const [submitted, setSubmitted] = useState(false);
 
@@ -179,7 +179,7 @@ export function BookDemoDialog({
   defaultProgram,
 }: {
   children: ReactNode;
-  defaultProgram?: string;
+  defaultProgram?: string | undefined;
 }) {
   const [open, setOpen] = useState(false);
   return (
