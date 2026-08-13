@@ -127,14 +127,10 @@ function FooterLink({
   hash?: string;
   children: React.ReactNode;
 }) {
+  const linkProps = { to, params, hash } as unknown as React.ComponentProps<typeof Link>;
   return (
     <li>
-      <Link
-        to={to}
-        {...(params ? { params } : {})}
-        {...(hash ? { hash } : {})}
-        className="text-sm text-ink-muted transition-colors hover:text-primary"
-      >
+      <Link {...linkProps} className="text-sm text-ink-muted transition-colors hover:text-primary">
         {children}
       </Link>
     </li>
