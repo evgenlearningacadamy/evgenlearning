@@ -57,10 +57,14 @@ export function CourseCard({ course, index = 0 }: { course: Course; index?: numb
       </p>
 
       <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-current/10">
-        {course.meta.slice(0, 4).map((item) => (
+        {course.meta.slice(0, 4).map((item, i, arr) => (
           <div
             key={item.label}
-            className={cn("p-3", advanced ? "bg-ink-card" : "bg-secondary")}
+            className={cn(
+              "p-3",
+              advanced ? "bg-ink-card" : "bg-secondary",
+              arr.length % 2 === 1 && i === arr.length - 1 && "col-span-2",
+            )}
           >
             <dt className={cn("text-[0.65rem] uppercase tracking-widest", advanced ? "text-ink-muted" : "text-muted-foreground")}>
               {item.label}
