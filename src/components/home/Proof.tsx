@@ -76,25 +76,31 @@ export function PlacementSection({ withCta = true }: { withCta?: boolean }) {
           <Reveal
             key={poster.id}
             delay={(i % 4) * 60}
-            className="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-ink text-ink-foreground"
+            className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-ink text-ink-foreground"
           >
-            <div className="absolute inset-0 grid-lines-ink opacity-60" aria-hidden="true" />
-            <div className="relative flex h-full flex-col justify-between p-6">
-              <span className="font-display text-xs uppercase tracking-[0.2em] text-primary">
-                {poster.title}
-              </span>
-              <div>
-                <p className="font-display text-lg font-bold uppercase leading-tight">
-                  {poster.caption}
-                </p>
-                <p className="mt-2 text-xs text-ink-muted">
-                  Placement poster artwork to be added by EVGEN.
-                </p>
-              </div>
+            <img
+              src={poster.image}
+              alt={`${poster.name}, placed as ${poster.role} at ${poster.company}`}
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+            <div
+              className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink to-transparent"
+              aria-hidden="true"
+            />
+            <div className="relative flex h-full flex-col justify-end p-5">
+              <p className="font-display text-base font-bold uppercase leading-tight">
+                {poster.name}
+              </p>
+              <p className="mt-1 text-xs uppercase tracking-[0.14em] text-ink-muted">
+                {poster.role}
+              </p>
+              <p className="mt-1 text-xs font-semibold text-primary">{poster.company}</p>
             </div>
           </Reveal>
         ))}
       </div>
+
 
       {withCta ? (
         <div className="mt-10">
