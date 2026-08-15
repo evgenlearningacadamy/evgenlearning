@@ -5,6 +5,17 @@
  * or database without touching the page components.
  */
 
+import placed1 from "@/assets/placements/placed-1.jpg.asset.json";
+import placed2 from "@/assets/placements/placed-2.jpg.asset.json";
+import placed3 from "@/assets/placements/placed-3.jpg.asset.json";
+import placed4 from "@/assets/placements/placed-4.jpg.asset.json";
+import placed5 from "@/assets/placements/placed-5.jpg.asset.json";
+import placed6 from "@/assets/placements/placed-6.jpg.asset.json";
+import placed7 from "@/assets/placements/placed-7.jpg.asset.json";
+import placed8 from "@/assets/placements/placed-8.jpg.asset.json";
+import placed9 from "@/assets/placements/placed-9.jpg.asset.json";
+import placed10 from "@/assets/placements/placed-10.jpg.asset.json";
+
 export const site = {
   name: "EVGEN Learning Academy",
   shortName: "EVGEN",
@@ -336,16 +347,6 @@ export const ecosystemBrands = [
 ];
 
 /** Placement posters supplied by EVGEN. Replace `image` with the poster asset. */
-import placed1 from "@/assets/placements/placed-1.jpg.asset.json";
-import placed2 from "@/assets/placements/placed-2.jpg.asset.json";
-import placed3 from "@/assets/placements/placed-3.jpg.asset.json";
-import placed4 from "@/assets/placements/placed-4.jpg.asset.json";
-import placed5 from "@/assets/placements/placed-5.jpg.asset.json";
-import placed6 from "@/assets/placements/placed-6.jpg.asset.json";
-import placed7 from "@/assets/placements/placed-7.jpg.asset.json";
-import placed8 from "@/assets/placements/placed-8.jpg.asset.json";
-import placed9 from "@/assets/placements/placed-9.jpg.asset.json";
-import placed10 from "@/assets/placements/placed-10.jpg.asset.json";
 
 export const placementPosters = [
   { id: "p1", name: "Ajay S", role: "EV Service Engineer", company: "Ola Electric", image: placed1.url },
