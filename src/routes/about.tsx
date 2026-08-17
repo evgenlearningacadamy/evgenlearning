@@ -91,6 +91,42 @@ function AboutPage() {
         </div>
       </Section>
 
+      <Section tone="muted">
+        <Eyebrow>About EVGEN</Eyebrow>
+        <SectionTitle>About EVGEN</SectionTitle>
+        <SectionLead>
+          EVGEN Learning Academy is focused on helping learners understand EV technology, build
+          practical skills, explore career opportunities and prepare for the evolving electric
+          mobility industry.
+        </SectionLead>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            "EV skill development",
+            "Industry-focused learning",
+            "Practical exposure",
+            "Career development",
+            "Entrepreneurship awareness",
+            "Future-ready EV professionals",
+          ].map((item, i) => (
+            <Reveal
+              key={item}
+              delay={i * 50}
+              className="rounded-2xl border border-border bg-background p-6 shadow-[var(--shadow-card)]"
+            >
+              <h3 className="font-display text-base font-semibold">{item}</h3>
+            </Reveal>
+          ))}
+        </div>
+        <div className="mt-12">
+          <h3 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            EVGEN's Approach
+          </h3>
+          <p className="mt-4 font-display text-xl font-semibold uppercase leading-tight sm:text-2xl">
+            Awareness → Skills → Careers → Entrepreneurship
+          </p>
+        </div>
+      </Section>
+
       <LearningExperience />
       <WhyEvgen />
       <FounderMessage />
