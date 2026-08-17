@@ -50,6 +50,7 @@ export const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Courses", to: "/courses" },
+  { label: "EV FUTURO", to: "/ev-futuro" },
   { label: "Placements", to: "/placements" },
   { label: "Student Stories", to: "/student-stories" },
   { label: "EV Insights", to: "/ev-insights" },
