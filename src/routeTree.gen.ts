@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as EvFuturoRouteImport } from './routes/ev-futuro'
 import { Route as EvInsightsRouteImport } from './routes/ev-insights'
 import { Route as PlacementsRouteImport } from './routes/placements'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
@@ -39,6 +40,11 @@ const ContactRoute = ContactRouteImport.update({
 const CoursesRoute = CoursesRouteImport.update({
   id: '/courses',
   path: '/courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EvFuturoRoute = EvFuturoRouteImport.update({
+  id: '/ev-futuro',
+  path: '/ev-futuro',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EvInsightsRoute = EvInsightsRouteImport.update({
@@ -82,6 +88,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/courses': typeof CoursesRouteWithChildren
+  '/ev-futuro': typeof EvFuturoRoute
   '/ev-insights': typeof EvInsightsRoute
   '/placements': typeof PlacementsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/ev-futuro': typeof EvFuturoRoute
   '/ev-insights': typeof EvInsightsRoute
   '/placements': typeof PlacementsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/courses': typeof CoursesRouteWithChildren
+  '/ev-futuro': typeof EvFuturoRoute
   '/ev-insights': typeof EvInsightsRoute
   '/placements': typeof PlacementsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/courses'
+    | '/ev-futuro'
     | '/ev-insights'
     | '/placements'
     | '/privacy-policy'
@@ -135,6 +145,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/ev-futuro'
     | '/ev-insights'
     | '/placements'
     | '/privacy-policy'
@@ -148,6 +159,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/courses'
+    | '/ev-futuro'
     | '/ev-insights'
     | '/placements'
     | '/privacy-policy'
@@ -162,6 +174,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRouteWithChildren
+  EvFuturoRoute: typeof EvFuturoRoute
   EvInsightsRoute: typeof EvInsightsRoute
   PlacementsRoute: typeof PlacementsRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -197,6 +210,13 @@ declare module '@tanstack/react-router' {
       path: '/courses'
       fullPath: '/courses'
       preLoaderRoute: typeof CoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ev-futuro': {
+      id: '/ev-futuro'
+      path: '/ev-futuro'
+      fullPath: '/ev-futuro'
+      preLoaderRoute: typeof EvFuturoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ev-insights': {
@@ -269,6 +289,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   CoursesRoute: CoursesRouteWithChildren,
+  EvFuturoRoute: EvFuturoRoute,
   EvInsightsRoute: EvInsightsRoute,
   PlacementsRoute: PlacementsRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
