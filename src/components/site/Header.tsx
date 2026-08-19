@@ -32,12 +32,12 @@ export function Header() {
           : "border-transparent bg-background",
       )}
     >
-      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between gap-6 px-5 sm:px-8">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-5 sm:h-24 sm:px-8">
         <Link to="/" className="group flex items-center" aria-label={site.name}>
           <img
             src={evgenLogo.url}
             alt="EVGEN Learning Academy"
-            className="h-11 w-auto object-contain sm:h-12"
+            className="h-14 w-auto object-contain sm:h-16"
           />
         </Link>
 
