@@ -14,7 +14,7 @@ export function Footer() {
           <img
             src={evgenLogoLight.url}
             alt="EVGEN Learning Academy"
-            className="h-12 w-auto object-contain"
+            className="h-16 w-auto object-contain sm:h-20"
           />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-muted">
             Building future-ready EV professionals through practical, industry-focused skill
