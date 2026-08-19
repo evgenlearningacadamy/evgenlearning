@@ -121,12 +121,6 @@ function EvFuturoPage() {
             <span className="inline-block h-px w-8 bg-primary" aria-hidden="true" />
             EVGEN | EV Skill Development Academy
           </p>
-          <img
-            src={evFuturoLogo.url}
-            alt="EV FUTURO — Charge your skills, power the future"
-            className="mt-8 w-full max-w-xs rounded-2xl border border-ink-border"
-            loading="eager"
-          />
           <h1 className="mt-8 text-5xl font-bold uppercase leading-[1.02] sm:text-6xl md:text-7xl">
             EV Futuro
           </h1>
