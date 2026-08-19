@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, MessageCircle, X, Zap } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
 import { navLinks, site, whatsappLink } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
+import evgenLogo from "@/assets/evgen-logo-dark.png.asset.json";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -32,16 +33,12 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between gap-6 px-5 sm:px-8">
-        <Link to="/" className="group flex items-center gap-2.5" aria-label={site.name}>
-          <span className="flex size-9 items-center justify-center rounded-md bg-foreground text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-            <Zap className="size-5" />
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-lg font-bold tracking-tight">EVGEN</span>
-            <span className="block text-[0.62rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
-              Learning Academy
-            </span>
-          </span>
+        <Link to="/" className="group flex items-center" aria-label={site.name}>
+          <img
+            src={evgenLogo.url}
+            alt="EVGEN Learning Academy"
+            className="h-11 w-auto object-contain sm:h-12"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">

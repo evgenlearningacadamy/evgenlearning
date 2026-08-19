@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Zap } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
 import { courses, navLinks, site } from "@/lib/site-data";
+import evgenLogoLight from "@/assets/evgen-logo-light.png.asset.json";
 
 export function Footer() {
   return (
@@ -10,12 +11,11 @@ export function Footer() {
       <div className="pointer-events-none absolute inset-0 grid-lines-ink opacity-60" aria-hidden="true" />
       <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="flex size-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <Zap className="size-5" />
-            </span>
-            <span className="font-display text-lg font-bold">EVGEN Learning Academy</span>
-          </div>
+          <img
+            src={evgenLogoLight.url}
+            alt="EVGEN Learning Academy"
+            className="h-12 w-auto object-contain"
+          />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-muted">
             Building future-ready EV professionals through practical, industry-focused skill
             development.

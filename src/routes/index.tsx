@@ -4,7 +4,7 @@ import { CareerOpportunities, WhoCanStart, WhyEv } from "@/components/home/WhyEv
 import {
   ComparisonTable,
   CourseDiscovery,
-  FourWeekExperience,
+  ThreeMonthExperience,
   PracticalSection,
 } from "@/components/home/Programs";
 import {
@@ -72,7 +72,7 @@ function HomePage() {
       <CareerOpportunities />
       <WhoCanStart />
       <CourseDiscovery />
-      <FourWeekExperience />
+      <ThreeMonthExperience />
       <PracticalSection />
       <ComparisonTable />
       <LearningExperience />

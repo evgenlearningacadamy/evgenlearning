@@ -37,9 +37,9 @@ export function Hero() {
               </Button>
             </div>
             <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-ink-border pt-8">
-              <HeroStat value="4 Weeks" label="Short-term start" />
-              <HeroStat value="24 Days" label="Live classes" />
-              <HeroStat value="Lifetime" label="Recorded access" />
+              <HeroStat value="3 Months" label="Flagship program" />
+              <HeroStat value="2 Months" label="Offline practical" />
+              <HeroStat value="2W · 3W · 4W" label="Vehicle exposure" />
             </dl>
           </div>
 
