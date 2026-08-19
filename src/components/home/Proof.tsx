@@ -11,6 +11,7 @@ import {
   trainers,
   whyEvgen,
 } from "@/lib/site-data";
+import founderPhoto from "@/assets/founder.png.asset.json";
 import communityLab from "@/assets/community-lab.jpg";
 
 export function LearningExperience() {
@@ -200,7 +201,7 @@ export function TrainersSection() {
       <Eyebrow>Trainers</Eyebrow>
       <SectionTitle>Learn from industry-focused trainers.</SectionTitle>
       <SectionLead>
-        Trainer profiles are published only with verified information supplied by EVGEN.
+        Our EV technology trainers guide every session, from core concepts to hands-on practice.
       </SectionLead>
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -210,9 +211,18 @@ export function TrainersSection() {
             delay={i * 80}
             className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]"
           >
-            <div className="flex h-52 items-center justify-center bg-secondary text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Photograph to be added
-            </div>
+            {trainer.photo ? (
+              <img
+                src={trainer.photo}
+                alt={`${trainer.name}, ${trainer.designation} at EVGEN Learning Academy`}
+                loading="lazy"
+                className="h-72 w-full bg-secondary object-cover object-top"
+              />
+            ) : (
+              <div className="flex h-52 items-center justify-center bg-secondary text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                Photograph to be added
+              </div>
+            )}
             <div className="p-7">
               <h3 className="font-display text-lg font-bold">{trainer.name}</h3>
               <p className="mt-1 text-sm text-primary">{trainer.designation}</p>
@@ -297,8 +307,13 @@ export function FounderMessage() {
   return (
     <Section tone="muted">
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-        <Reveal className="flex aspect-[4/5] items-center justify-center rounded-2xl border border-border bg-card text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          Founder photograph to be added
+        <Reveal className="overflow-hidden rounded-2xl border border-border bg-card">
+          <img
+            src={founderPhoto.url}
+            alt="Founder of EVGEN Learning Academy"
+            loading="lazy"
+            className="aspect-[4/5] w-full object-cover object-top"
+          />
         </Reveal>
         <div>
           <Eyebrow>Founder</Eyebrow>
