@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight, Clock, MonitorPlay, PlayCircle, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
@@ -92,6 +93,81 @@ export function FourWeekExperience() {
               Book Free Demo
             </Button>
           </BookDemoDialog>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+export function ThreeMonthExperience() {
+  const cards = [
+    {
+      big: "1 Month",
+      title: "Live Learning",
+      text: "Structured instructor-led sessions covering EV technology fundamentals to systems.",
+      icon: MonitorPlay,
+    },
+    {
+      big: "2 Months",
+      title: "Offline Practical Training",
+      text: "Extended hands-on practice on real vehicles, battery systems and diagnostics.",
+      icon: Wrench,
+    },
+    {
+      big: "2W · 3W · 4W",
+      title: "Full Vehicle Exposure",
+      text: "Work across two, three and four wheeler EV platforms.",
+      icon: PlayCircle,
+    },
+  ];
+
+  return (
+    <Section tone="ink">
+      <div className="pointer-events-none absolute inset-0 grid-lines-ink opacity-50" aria-hidden="true" />
+      <div className="relative">
+        <Eyebrow tone="ink">3 Month Program Experience</Eyebrow>
+        <SectionTitle>One month live. Two months hands-on. Full vehicle exposure.</SectionTitle>
+
+        <div className="mt-14 grid gap-5 md:grid-cols-3">
+          {cards.map((card, i) => (
+            <Reveal
+              key={card.title}
+              delay={i * 90}
+              className="rounded-2xl border border-ink-border bg-ink-card p-8 transition-colors hover:border-primary/60"
+            >
+              <card.icon className="size-6 text-primary" />
+              <p className="mt-8 font-display text-4xl font-bold uppercase leading-none">{card.big}</p>
+              <h3 className="mt-4 font-display text-base font-semibold uppercase tracking-wide">
+                {card.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-ink-muted">{card.text}</p>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="mt-10 flex flex-col gap-6 rounded-2xl border border-ink-border p-8 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-4">
+            <Clock className="size-6 text-primary" />
+            <div>
+              <p className="font-display text-2xl font-bold">3 Months · Deep Practical Learning</p>
+              <p className="mt-2 max-w-xl text-sm text-ink-muted">
+                Built for learners who want extended workshop time, broader vehicle coverage and
+                career-ready practical confidence.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <BookDemoDialog defaultProgram="3 Month EV Technology Program">
+              <Button variant="hero" size="xl" className="uppercase">
+                Book Free Demo
+              </Button>
+            </BookDemoDialog>
+            <Button variant="outlineInk" size="xl" asChild>
+              <Link to="/courses/$slug" params={{ slug: "3-month-ev-technology-program" }}>
+                Program Details <ArrowRight />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </Section>

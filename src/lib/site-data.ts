@@ -1,3 +1,7 @@
+import trainerArjunMp from "@/assets/trainers/trainer-arjun-mp.png.asset.json";
+import trainerMuhammedRahees from "@/assets/trainers/trainer-muhammed-rahees.png.asset.json";
+import trainerArjunEv from "@/assets/trainers/trainer-arjun-ev.png.asset.json";
+
 /**
  * Central content source for EVGEN Learning Academy.
  * Everything that changes often (courses, batches, testimonials, placements,
@@ -134,7 +138,7 @@ export const courses: Course[] = [
     stage: "START",
     index: "01",
     title: "4 Week Online EV Skill Upgrade Program",
-    badge: "Most Popular",
+    badge: "Short-Term Start",
     duration: "4 Weeks",
     format: "Online + 2 Days Offline Practical",
     summary:
@@ -175,7 +179,7 @@ export const courses: Course[] = [
     stage: "BUILD",
     index: "02",
     title: "3 Month EV Technology Program",
-    badge: "Deep Practical Learning",
+    badge: "Most Popular",
     duration: "3 Months",
     format: "1 Month Live + 2 Months Offline Practical",
     summary:
@@ -409,27 +413,30 @@ export type Trainer = {
   designation: string;
   experience: string;
   expertise: string;
+  photo?: string;
 };
 
-/** Placeholders until EVGEN supplies verified trainer profiles and photographs. */
 export const trainers: Trainer[] = [
   {
-    name: "Trainer profile to be updated",
+    name: "Arjun M P",
     designation: "EV Technology Trainer",
-    experience: "Experience details to be provided by EVGEN",
+    experience: "Hands-on EV training experience",
     expertise: "EV systems & practical training",
+    photo: trainerArjunMp.url,
   },
   {
-    name: "Trainer profile to be updated",
-    designation: "Battery & Diagnostics Trainer",
-    experience: "Experience details to be provided by EVGEN",
+    name: "Muhammed Rahees",
+    designation: "EV Technology Trainer",
+    experience: "Hands-on EV training experience",
     expertise: "Battery checking, diagnosis & troubleshooting",
+    photo: trainerMuhammedRahees.url,
   },
   {
-    name: "Trainer profile to be updated",
-    designation: "Advanced EV Technology Trainer",
-    experience: "Experience details to be provided by EVGEN",
-    expertise: "Advanced battery and chip-level concepts",
+    name: "Arjun E V",
+    designation: "EV Technology Trainer",
+    experience: "Hands-on EV training experience",
+    expertise: "Advanced EV technology & diagnostics",
+    photo: trainerArjunEv.url,
   },
 ];
 
