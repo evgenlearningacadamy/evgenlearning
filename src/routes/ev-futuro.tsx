@@ -149,6 +149,34 @@ function EvFuturoPage() {
         </div>
       </section>
 
+      <Section tone="muted">
+        <Eyebrow>On Campus</Eyebrow>
+        <SectionTitle>EV FUTURO in action.</SectionTitle>
+        <SectionLead>
+          Sessions, interactions and conversations from EV FUTURO campus programmes.
+        </SectionLead>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {gallery.map((img, i) => (
+            <Reveal
+              key={img.src}
+              delay={i * 60}
+              className={
+                i === 0
+                  ? "overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-card)] sm:col-span-2 sm:row-span-2"
+                  : "overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-card)]"
+              }
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading={i === 0 ? "eager" : "lazy"}
+                className="h-full w-full object-cover"
+              />
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
       <Section id="why-ev-futuro">
         <Eyebrow>Why EV FUTURO</Eyebrow>
         <SectionTitle>The EV revolution is creating a new generation of opportunities.</SectionTitle>
