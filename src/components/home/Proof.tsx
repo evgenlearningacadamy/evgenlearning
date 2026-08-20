@@ -278,6 +278,23 @@ export function AcademyLife() {
 }
 
 export function Certification() {
+  const certificates = [
+    {
+      id: "student",
+      label: "CTDS Student Certificate",
+      hint: "Hover to preview",
+      src: ctdsStudent.url,
+      alt: "CTDS student course completion certificate specimen",
+    },
+    {
+      id: "authorisation",
+      label: "CTDS Certificate of Authorisation",
+      hint: "Hover to preview",
+      src: ctdsAuthorisation.url,
+      alt: "CTDS certificate of authorisation naming EVGEN Learning Academy an authorized training partner",
+    },
+  ];
+
   return (
     <Section>
       <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
@@ -285,19 +302,33 @@ export function Certification() {
           <Eyebrow>Certification</Eyebrow>
           <SectionTitle>Recognize your learning.</SectionTitle>
           <SectionLead>
-            Receive certification upon successful completion of the applicable program.
+            EVGEN Learning Academy is an authorized training partner of CTDS — Council for Technical
+            Development Continuing Academic Educational and Scientific Studies, registered under
+            NITI Aayog, Govt. of India. Learners receive a CTDS certificate on successful completion
+            of the applicable program.
           </SectionLead>
-        </div>
-        <Reveal className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
-          <div className="absolute inset-0 grid-lines opacity-40" aria-hidden="true" />
-          <div className="relative flex h-full flex-col items-center justify-center gap-4 p-10 text-center">
-            <Award className="size-10 text-primary" />
-            <p className="font-display text-lg font-bold uppercase">Certificate of Completion</p>
-            <p className="max-w-sm text-sm text-muted-foreground">
-              Official certificate artwork will be displayed here once supplied by EVGEN.
-            </p>
+          <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground">
+            <Award className="size-5 text-primary" />
+            Registered MSME, Govt. of India · ISO 9001:2015 certified body
           </div>
-        </Reveal>
+          <CertificateHoverPreview items={certificates} />
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+          {certificates.map((cert, i) => (
+            <Reveal
+              key={cert.id}
+              delay={i * 90}
+              className="overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-[var(--shadow-card)]"
+            >
+              <img
+                src={cert.src}
+                alt={cert.alt}
+                loading="lazy"
+                className="h-full w-full rounded-lg object-contain"
+              />
+            </Reveal>
+          ))}
+        </div>
       </div>
     </Section>
   );
