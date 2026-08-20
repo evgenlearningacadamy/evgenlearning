@@ -2,7 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { CourseGrid } from "@/components/site/CourseCards";
-import { ComparisonTable, FourWeekExperience, PracticalSection } from "@/components/home/Programs";
+import {
+  ComparisonTable,
+  FourWeekExperience,
+  PracticalSection,
+  ThreeMonthExperience,
+} from "@/components/home/Programs";
 import { LearningExperience } from "@/components/home/Proof";
 import { FaqSection } from "@/components/site/FaqSection";
 import { FinalCta } from "@/components/site/FinalCta";

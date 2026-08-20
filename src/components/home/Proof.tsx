@@ -13,6 +13,9 @@ import {
 } from "@/lib/site-data";
 import founderPhoto from "@/assets/founder.png.asset.json";
 import communityLab from "@/assets/community-lab.jpg";
+import ctdsStudent from "@/assets/certs/ctds-student-certificate.jpg.asset.json";
+import ctdsAuthorisation from "@/assets/certs/ctds-authorisation.jpg.asset.json";
+import { CertificateHoverPreview } from "@/components/site/CertificateHoverPreview";
 
 export function LearningExperience() {
   return (
