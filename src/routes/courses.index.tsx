@@ -68,6 +68,7 @@ function CoursesPage() {
         <CourseGrid />
       </Section>
       <ComparisonTable />
+      <ThreeMonthExperience />
       <FourWeekExperience />
       <PracticalSection />
       <LearningExperience />
