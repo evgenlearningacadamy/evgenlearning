@@ -24,10 +24,10 @@ export const site = {
   name: "EVGEN Learning Academy",
   shortName: "EVGEN",
   domain: "evgenlearningacademy.com",
-  phone: "+91 9400797914",
-  phoneHref: "tel:+919400797914",
+  phone: "+91 94468 87914",
+  phoneHref: "tel:+919446887914",
   email: "evgenlearningacadamy@gmail.com",
-  whatsappNumber: "919400797914",
+  whatsappNumber: "919446887914",
   whatsappMessage:
     "Hi EVGEN Academy, I'm interested in your EV programs. I would like to know more about the next batch and demo class.",
   address: {
@@ -140,7 +140,7 @@ export const courses: Course[] = [
     title: "4 Week Online EV Skill Upgrade Program",
     badge: "Short-Term Start",
     duration: "4 Weeks",
-    format: "Online + 2 Days Offline Practical",
+    format: "Online Live + Record + Practical",
     summary:
       "A focused short-term program for students, freshers and beginners who want to understand EV technology and build practical skills.",
     description:
@@ -149,7 +149,7 @@ export const courses: Course[] = [
     vehicles: "Strong focus on EV Two-Wheelers",
     meta: [
       { label: "Duration", value: "4 Weeks" },
-      { label: "Mode", value: "Online" },
+      { label: "Mode", value: "Online Live + Record + Practical" },
       { label: "Live Classes", value: "24 Days" },
       { label: "Offline Practical", value: "2 Days" },
       { label: "Class Timing", value: "8:00 PM – 10:00 PM" },

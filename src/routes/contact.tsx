@@ -10,7 +10,7 @@ import { site, whatsappLink } from "@/lib/site-data";
 
 const title = "Contact EVGEN Learning Academy — EV Training in Calicut";
 const description =
-  "Visit or contact EVGEN Learning Academy at Beach Complex, Silk Street, Calicut, Kerala. Call +91 9400797914 or send an enquiry about our EV programs.";
+  "Visit or contact EVGEN Learning Academy at Beach Complex, Silk Street, Calicut, Kerala. Call +91 94468 87914 or send an enquiry about our EV programs.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
