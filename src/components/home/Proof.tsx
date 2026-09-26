@@ -13,9 +13,7 @@ import {
 } from "@/lib/site-data";
 import founderPhoto from "@/assets/founder.png.asset.json";
 import communityLab from "@/assets/community-lab.jpg";
-import ctdsStudent from "@/assets/certs/ctds-student-certificate.jpg.asset.json";
 import ctdsAuthorisation from "@/assets/certs/ctds-authorisation.jpg.asset.json";
-import { CertificateHoverPreview } from "@/components/site/CertificateHoverPreview";
 
 export function LearningExperience() {
   return (
@@ -283,16 +281,7 @@ export function AcademyLife() {
 export function Certification() {
   const certificates = [
     {
-      id: "student",
-      label: "CTDS Student Certificate",
-      hint: "Hover to preview",
-      src: ctdsStudent.url,
-      alt: "CTDS student course completion certificate specimen",
-    },
-    {
       id: "authorisation",
-      label: "CTDS Certificate of Authorisation",
-      hint: "Hover to preview",
       src: ctdsAuthorisation.url,
       alt: "CTDS certificate of authorisation naming EVGEN Learning Academy an authorized training partner",
     },
@@ -314,7 +303,6 @@ export function Certification() {
             <Award className="size-5 text-primary" />
             Registered MSME, Govt. of India · ISO 9001:2015 certified body
           </div>
-          <CertificateHoverPreview items={certificates} />
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
           {certificates.map((cert, i) => (
