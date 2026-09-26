@@ -5,18 +5,18 @@ import { BookDemoDialog } from "@/components/site/LeadForm";
 import { Eyebrow, Section, SectionLead, SectionTitle } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { site, whatsappLink } from "@/lib/site-data";
-import futuro1 from "@/assets/futuro/futuro-1.jpg.asset.json";
-import futuro2 from "@/assets/futuro/futuro-2.jpg.asset.json";
-import futuro3 from "@/assets/futuro/futuro-3.jpg.asset.json";
-import futuro4 from "@/assets/futuro/futuro-4.jpg.asset.json";
-import futuro5 from "@/assets/futuro/futuro-5.jpg.asset.json";
+import futuro1 from "@/assets/futuro/futuro-1.jpg";
+import futuro2 from "@/assets/futuro/futuro-2.jpg";
+import futuro3 from "@/assets/futuro/futuro-3.jpg";
+import futuro4 from "@/assets/futuro/futuro-4.jpg";
+import futuro5 from "@/assets/futuro/futuro-5.jpg";
 
 const gallery = [
-  { src: futuro4.url, alt: "EVGEN trainer addressing students during an EV FUTURO college session" },
-  { src: futuro1.url, alt: "Students listening to an EV FUTURO awareness session at a polytechnic college" },
-  { src: futuro5.url, alt: "A student asking a question during an EV FUTURO interactive session" },
-  { src: futuro3.url, alt: "EVGEN team interacting with faculty and students after an EV FUTURO session" },
-  { src: futuro2.url, alt: "College dignitary addressing students at an EV FUTURO programme" },
+  { src: futuro4, alt: "EVGEN trainer addressing students during an EV FUTURO college session" },
+  { src: futuro1, alt: "Students listening to an EV FUTURO awareness session at a polytechnic college" },
+  { src: futuro5, alt: "A student asking a question during an EV FUTURO interactive session" },
+  { src: futuro3, alt: "EVGEN team interacting with faculty and students after an EV FUTURO session" },
+  { src: futuro2, alt: "College dignitary addressing students at an EV FUTURO programme" },
 ];
 
 const title = "EV FUTURO | College EV Career & Entrepreneurship Initiative | EVGEN";

@@ -3,9 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
 import { trustBar } from "@/lib/site-data";
-import heroImageAsset from "@/assets/futuro/expert-team-banner.jpg.asset.json";
-
-const heroImage = heroImageAsset.url;
+import heroImage from "@/assets/futuro/expert-team-banner.jpg";
 
 export function Hero() {
   return (

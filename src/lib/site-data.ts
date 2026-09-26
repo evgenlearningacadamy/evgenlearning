@@ -1,6 +1,6 @@
-import trainerArjunMp from "@/assets/trainers/trainer-arjun-mp.png.asset.json";
-import trainerMuhammedRahees from "@/assets/trainers/trainer-muhammed-rahees.png.asset.json";
-import trainerArjunEv from "@/assets/trainers/trainer-arjun-ev.png.asset.json";
+import trainerArjunMp from "@/assets/trainers/trainer-arjun-mp.png";
+import trainerMuhammedRahees from "@/assets/trainers/trainer-muhammed-rahees.png";
+import trainerArjunEv from "@/assets/trainers/trainer-arjun-ev.webp";
 
 /**
  * Central content source for EVGEN Learning Academy.
@@ -9,16 +9,16 @@ import trainerArjunEv from "@/assets/trainers/trainer-arjun-ev.png.asset.json";
  * or database without touching the page components.
  */
 
-import placed1 from "@/assets/placements/placed-1.jpg.asset.json";
-import placed2 from "@/assets/placements/placed-2.jpg.asset.json";
-import placed3 from "@/assets/placements/placed-3.jpg.asset.json";
-import placed4 from "@/assets/placements/placed-4.jpg.asset.json";
-import placed5 from "@/assets/placements/placed-5.jpg.asset.json";
-import placed6 from "@/assets/placements/placed-6.jpg.asset.json";
-import placed7 from "@/assets/placements/placed-7.jpg.asset.json";
-import placed8 from "@/assets/placements/placed-8.jpg.asset.json";
-import placed9 from "@/assets/placements/placed-9.jpg.asset.json";
-import placed10 from "@/assets/placements/placed-10.jpg.asset.json";
+import placed1 from "@/assets/placements/placed-1.jpg";
+import placed2 from "@/assets/placements/placed-2.jpg";
+import placed3 from "@/assets/placements/placed-3.jpg";
+import placed4 from "@/assets/placements/placed-4.jpg";
+import placed5 from "@/assets/placements/placed-5.jpg";
+import placed6 from "@/assets/placements/placed-6.jpg";
+import placed7 from "@/assets/placements/placed-7.jpg";
+import placed8 from "@/assets/placements/placed-8.jpg";
+import placed9 from "@/assets/placements/placed-9.jpg";
+import placed10 from "@/assets/placements/placed-10.jpg";
 
 export const site = {
   name: "EVGEN Learning Academy",
@@ -354,16 +354,16 @@ export const ecosystemBrands = [
 /** Placement posters supplied by EVGEN. Replace `image` with the poster asset. */
 
 export const placementPosters = [
-  { id: "p1", name: "Ajay S", role: "EV Service Engineer", company: "Ola Electric", image: placed1.url },
-  { id: "p2", name: "Jalwan K.V", role: "EV Service Engineer", company: "Yulu Electric", image: placed2.url },
-  { id: "p3", name: "Shabeer Ali M.P", role: "EV Service Engineer", company: "EVOLT-X", image: placed3.url },
-  { id: "p4", name: "Abhishek P.M", role: "EV Service Engineer", company: "Ola Electric", image: placed4.url },
-  { id: "p5", name: "Abhishek P.M", role: "EV Service Engineer", company: "Ola Electric", image: placed5.url },
-  { id: "p6", name: "Sangeeth S Sunil", role: "EV Service Engineer", company: "Simple Energy", image: placed6.url },
-  { id: "p7", name: "Muhammed Ubaid", role: "Service Engineer", company: "Mahindra", image: placed7.url },
-  { id: "p8", name: "Muhammed Inshaf K", role: "EV Service Engineer", company: "Yulu Electric", image: placed8.url },
-  { id: "p9", name: "Subin", role: "EV Service Engineer", company: "Mahindra", image: placed9.url },
-  { id: "p10", name: "Bibil K", role: "EV Service Engineer", company: "Powersine Technologies", image: placed10.url },
+  { id: "p1", name: "Ajay S", role: "EV Service Engineer", company: "Ola Electric", image: placed1 },
+  { id: "p2", name: "Jalwan K.V", role: "EV Service Engineer", company: "Yulu Electric", image: placed2 },
+  { id: "p3", name: "Shabeer Ali M.P", role: "EV Service Engineer", company: "EVOLT-X", image: placed3 },
+  { id: "p4", name: "Abhishek P.M", role: "EV Service Engineer", company: "Ola Electric", image: placed4 },
+  { id: "p5", name: "Abhishek P.M", role: "EV Service Engineer", company: "Ola Electric", image: placed5 },
+  { id: "p6", name: "Sangeeth S Sunil", role: "EV Service Engineer", company: "Simple Energy", image: placed6 },
+  { id: "p7", name: "Muhammed Ubaid", role: "Service Engineer", company: "Mahindra", image: placed7 },
+  { id: "p8", name: "Muhammed Inshaf K", role: "EV Service Engineer", company: "Yulu Electric", image: placed8 },
+  { id: "p9", name: "Subin", role: "EV Service Engineer", company: "Mahindra", image: placed9 },
+  { id: "p10", name: "Bibil K", role: "EV Service Engineer", company: "Powersine Technologies", image: placed10 },
 ];
 
 
@@ -422,21 +422,21 @@ export const trainers: Trainer[] = [
     designation: "EV Technology Trainer",
     experience: "Hands-on EV training experience",
     expertise: "EV systems & practical training",
-    photo: trainerArjunMp.url,
+    photo: trainerArjunMp,
   },
   {
     name: "Muhammed Rahees",
     designation: "EV Technology Trainer",
     experience: "Hands-on EV training experience",
     expertise: "Battery checking, diagnosis & troubleshooting",
-    photo: trainerMuhammedRahees.url,
+    photo: trainerMuhammedRahees,
   },
   {
     name: "Arjun E V",
     designation: "EV Technology Trainer",
     experience: "Hands-on EV training experience",
     expertise: "Advanced EV technology & diagnostics",
-    photo: trainerArjunEv.url,
+    photo: trainerArjunEv,
   },
 ];
 

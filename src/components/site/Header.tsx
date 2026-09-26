@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
 import { navLinks, site, whatsappLink } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
-import evgenLogo from "@/assets/evgen-logo-dark.png.asset.json";
+import evgenLogo from "@/assets/evgen-logo-dark.webp";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-5 sm:h-24 sm:px-8">
         <Link to="/" className="group flex items-center" aria-label={site.name}>
           <img
-            src={evgenLogo.url}
+            src={evgenLogo}
             alt="EVGEN Learning Academy"
             className="h-14 w-auto object-contain sm:h-16"
           />

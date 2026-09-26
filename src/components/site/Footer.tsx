@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react
 import { Button } from "@/components/ui/button";
 import { BookDemoDialog } from "@/components/site/LeadForm";
 import { courses, navLinks, site } from "@/lib/site-data";
-import evgenLogoLight from "@/assets/evgen-logo-light.png.asset.json";
+import evgenLogoLight from "@/assets/evgen-logo-light.webp";
 
 export function Footer() {
   return (
@@ -12,7 +12,7 @@ export function Footer() {
       <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
           <img
-            src={evgenLogoLight.url}
+            src={evgenLogoLight}
             alt="EVGEN Learning Academy"
             className="h-16 w-auto object-contain sm:h-20"
           />

@@ -11,9 +11,9 @@ import {
   trainers,
   whyEvgen,
 } from "@/lib/site-data";
-import founderPhoto from "@/assets/founder.png.asset.json";
+import founderPhoto from "@/assets/founder.png";
 import communityLab from "@/assets/community-lab.jpg";
-import ctdsAuthorisation from "@/assets/certs/ctds-authorisation.jpg.asset.json";
+import ctdsAuthorisation from "@/assets/certs/ctds-authorisation.jpg";
 
 export function LearningExperience() {
   return (
@@ -282,7 +282,7 @@ export function Certification() {
   const certificates = [
     {
       id: "authorisation",
-      src: ctdsAuthorisation.url,
+      src: ctdsAuthorisation,
       alt: "CTDS certificate of authorisation naming EVGEN Learning Academy an authorized training partner",
     },
   ];
@@ -331,7 +331,7 @@ export function FounderMessage() {
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
         <Reveal className="overflow-hidden rounded-2xl border border-border bg-card">
           <img
-            src={founderPhoto.url}
+            src={founderPhoto}
             alt="Founder of EVGEN Learning Academy"
             loading="lazy"
             className="aspect-[4/5] w-full object-cover object-top"
